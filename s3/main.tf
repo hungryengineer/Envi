@@ -5,7 +5,7 @@ module "s3" {
   object_lock_enabled        = var.object_lock_enabled
   mode                       = var.mode
   days                       = var.days
-#   versioning_enabled         = var.versioning_enabled 
+  versioning                 = var.versioning
 #   tiering                    = var.tiering
   tags                       = local.tags
 }

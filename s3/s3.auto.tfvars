@@ -3,7 +3,7 @@ force_destroy = false
 object_lock_enabled = "Enabled"
 mode = "COMPLIANCE"
 days = 7
-# versioning_enabled = true
+versioning = true
 
 # tiering = {
 #     access_tier = "ARCHIVE_ACCESS"
