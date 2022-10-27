@@ -5,7 +5,7 @@ module "amp" {
     create_workspace = var.create_workspace
     alias = var.alias
     #logging_configuration = var.logging_configuration
-    #log_group_arn = data.<arn from cloudwatch outputs>
+    #log_group_arn = data.terraform_remote_state.cloudwatch.outputs.cloudwatch_log_arn[0]
     #tags  = local.tags
     
 }
