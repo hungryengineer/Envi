@@ -15,3 +15,13 @@ output "route53_zone_name_servers" {
 # output "route53_zone_association_id" {
 #     value = module.route53_zone_association[*].route53_zone_association_id
 # }
+
+############ record ###########
+
+output "route53_name" {
+    value = module.route53_record[*].route53_name
+}
+
+output "route53_fqdn" {
+    value = module.route53_record[*].route53_fqdn
+}
