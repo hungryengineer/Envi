@@ -25,3 +25,12 @@ output "route53_name" {
 output "route53_fqdn" {
     value = module.route53_record[*].route53_fqdn
 }
+
+########### health check #########
+output "route53_health_check_id" {
+    value = module.route53_health_check[*].route53_health_check_id
+}
+
+output "route53_health_check_arn" {
+    value = module.route53_health_check[*].route53_health_check_arn
+}
