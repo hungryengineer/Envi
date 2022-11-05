@@ -110,3 +110,8 @@ variable "rules" {
 variable "type" {
   
 }
+
+################### NETWORK INTERFACE ################
+variable "create_network_interface" {
+  
+}

@@ -60,3 +60,7 @@ traffic_type = "ALL"
 
 rules = [[""], ]
 type = [["ingress"], ]
+
+###################### NETWORK INTERFACE ###############
+
+create_network_interface = true

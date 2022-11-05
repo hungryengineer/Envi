@@ -92,3 +92,21 @@ output "security_group_arn" {
 output "security_group_rules_id" {
     value = module.security_group_rules[*].security_group_rules_id
 }
+
+############## NETWORK INTERFACE ################
+
+output "network_interface_arn" {
+    value = module.network_interface[*].network_interface_arn
+}
+
+output "network_interface_id" {
+    value = module.network_interface[*].network_interface_id
+}
+
+output "network_interface_mac_address" {
+    value = module.network_interface[*].network_interface_mac_address
+}
+
+output "network_interface_private_dns_name" {
+    value = module.network_interface[*].network_interface_private_dns_name
+}

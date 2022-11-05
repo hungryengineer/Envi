@@ -129,3 +129,14 @@ module "security_group_rules" {
   security_group_id = module.security_group.security_group_id[0]
   
 }
+
+################### NETWORK INTERFACE #####################
+
+module "network_interface" {
+  source = "git::https://github.com/hungryengineer/mod.git//network_interface?ref=feature"
+  create_network_interface = var.create_network_interface
+  subnet_id                = module.private_subnet[0].subnet_id[0]
+  # private_ips              = var.private_ips
+  security_groups          = module.security_group.security_group_id
+  tags                     = local.tags
+}
