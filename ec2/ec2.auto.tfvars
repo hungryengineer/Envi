@@ -1,0 +1,15 @@
+create_instance = true
+ami = "ami-0023b115b784081c7"
+instance_type = "t2.small"
+hibernation = false
+availability_zone = [["ap-northeast-1a"], ]
+monitoring = true
+associate_public_ip_address = false
+ebs_optimized = false
+network_interface = []
+device_index = [["0"], ]
+delete_on_termination = false
+source_dest_check = true
+disable_api_termination = false
+instance_initiated_shutdown_behavior = "stop"
+tenancy = "default"
