@@ -18,9 +18,9 @@ variable "availability_zone" {
   
 }
 
-# variable "key_name" {
+variable "key_name" {
   
-# }
+}
 
 variable "monitoring" {
   

@@ -3,6 +3,7 @@ ami = "ami-0023b115b784081c7"
 instance_type = "t2.small"
 hibernation = false
 availability_zone = [["ap-northeast-1a"], ]
+key_name = "k8s-server-key"
 monitoring = true
 associate_public_ip_address = false
 ebs_optimized = false
